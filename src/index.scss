@@ -8,7 +8,7 @@ body {
 .p {
   padding: 10px;
 
-  @for $i from 1 through 10 {
+  @for $i from 0 through 10 {
     $multiplier: 5px * $i;
 
     &-#{$i} {
@@ -39,6 +39,62 @@ body {
     &y-#{$i} {
       padding-top: $multiplier;
       padding-bottom: $multiplier;
+    }
+  }
+}
+
+.t {
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}
+
+.m {
+  margin: 10px;
+
+  @for $i from 0 through 10 {
+    $multiplier: 5px * $i;
+
+    &-#{$i} {
+      margin: $multiplier;
+    }
+
+    &t-#{$i} {
+      margin-top: $multiplier;
+    }
+
+    &r-#{$i} {
+      margin-right: $multiplier;
+    }
+
+    &b-#{$i} {
+      margin-bottom: $multiplier;
+    }
+
+    &l-#{$i} {
+      margin-left: $multiplier;
+    }
+
+    &x-#{$i} {
+      margin-left: $multiplier;
+      margin-right: $multiplier;
+    }
+
+    &y-#{$i} {
+      margin-top: $multiplier;
+      margin-bottom: $multiplier;
     }
   }
 }

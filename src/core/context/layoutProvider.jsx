@@ -52,6 +52,7 @@ export function LayoutProvider({ children }) {
     setLayoutData(newState)
   }
   const setHero = ({ title, image }) => {
+    console.log(title, image)
     setLayoutData({
       ...layoutData,
       hero: {
@@ -59,6 +60,7 @@ export function LayoutProvider({ children }) {
         image: image ? image : layoutData.hero.image,
       },
     })
+    console.log(layoutData)
   }
 
   const daata = {

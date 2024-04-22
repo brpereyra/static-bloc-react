@@ -1,8 +1,7 @@
 import './hero.scss'
 
-function Hero() {
-  const heroImage =
-    'https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b'
+function Hero({ hero }) {
+  const heroImage = hero.image
 
   const backGroundStyle = {
     backgroundImage: `url("${heroImage}")`,
@@ -11,7 +10,7 @@ function Hero() {
   return (
     <>
       <header className="hero" style={backGroundStyle}>
-        <h1 className="hero__title">Hero</h1>
+        <h1 className="hero__title">{hero.title}</h1>
       </header>
     </>
   )
