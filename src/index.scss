@@ -1,0 +1,44 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.p {
+  padding: 10px;
+
+  @for $i from 1 through 10 {
+    $multiplier: 5px * $i;
+
+    &-#{$i} {
+      padding: $multiplier;
+    }
+
+    &t-#{$i} {
+      padding-top: $multiplier;
+    }
+
+    &r-#{$i} {
+      padding-right: $multiplier;
+    }
+
+    &b-#{$i} {
+      padding-bottom: $multiplier;
+    }
+
+    &l-#{$i} {
+      padding-left: $multiplier;
+    }
+
+    &x-#{$i} {
+      padding-left: $multiplier;
+      padding-right: $multiplier;
+    }
+
+    &y-#{$i} {
+      padding-top: $multiplier;
+      padding-bottom: $multiplier;
+    }
+  }
+}
