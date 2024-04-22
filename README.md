@@ -10,7 +10,7 @@ install all node dependencies
   npm install
 ```
 
-## Usage
+## Deployment
 
 Compile the project
 
@@ -24,7 +24,7 @@ copy the build folder to your server
   cp -r build/* /var/www/html
 ```
 
-## Deployment
+## Development
 
 ```bash
   npm run dev
